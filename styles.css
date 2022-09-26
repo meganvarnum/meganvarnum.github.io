@@ -1,3 +1,283 @@
-h1 {
-    color: yellow;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@500&display=swap');
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  div.wrapper{
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  div {
+    padding: 0.2em;
+  }
+
+  div.container-main {
+    /* height: 90%; */
+  }
+  h1, h2, h3, h4 {
+      font-family: "Montserrat";
+      text-align: center;
+  }
+
+  h4 {
+    line-height: 1.5em;
+  }
+
+  h4 i {
+    font-size: 1.5em;
+  }
+
+  p {
+      font-family: "Lato";
+  }
+
+a {
+    color: white;
+    font-family: inherit;
 }
+
+p a {
+  color: inherit;
+}
+
+p a:hover {
+  /* background-color: rgba(0,0,0,.55);
+  color: white; */
+  color: inherit;
+  
+}
+
+a:hover {
+    color: white;
+}
+
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+  color: initial;
+}
+
+.my-button {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-width: 2px !important;
+    border-radius: 12px;
+    color: rgba(0,0,0,.55) !important;
+    border-color: rgba(0,0,0,.55) !important;
+  }
+
+  .my-button:hover {
+    /* color: black !important; */
+    border-color: rgba(0,0,0,.55) !important;
+    color: white !important;
+    background-color: #1b1c1e !important;
+  }
+
+  .my-button:hover > a {
+    color: white !important;
+  }
+
+  div.bottom {
+    /* position: absolute;
+    bottom:8%; */
+  }
+
+  h1.my-button-arrow.b i {
+    color: #4D5D77;
+  }
+
+  .my-dropdown {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 3px;
+    text-decoration-color: rgba(0,0,0,.55);
+    border-radius: 12px;
+    color: rgba(0,0,0,.55) !important;
+    border-color: rgba(0,0,0,.55) !important;
+  }
+
+  body{
+    background: #4D5D77;
+  }
+  section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  section .container{
+    margin: 100px;
+  }
+  section h1{
+    font-size: 6rem;
+    margin: 20px;
+    letter-spacing: -0.05em
+  }
+
+  section h2{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  section .text-container{
+     display: flex;
+  }
+
+  section .text-container .text-box{
+    margin: 20px;
+    padding: 20px;
+    background: #F7F7F2;
+    border-radius: 12px;
+  }
+
+  section .text-container .text-box h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .section-a {
+    background: white;
+    color: #4D5D77;
+  }
+
+  .section-b {
+    background: #4D5D77;
+    color: white;
+  }
+
+  .a .text-container .text-box {
+    background: #4D5D77;
+    color: white;
+  }
+
+  .b .text-container .text-box {
+    background: white;
+    color: #4D5D77;
+  }
+  
+  @media (max-width: 900px){
+    section h1{
+      /* font-size: 2rem; */
+      /* text-align: center; */
+    }
+    section .text-container{
+      flex-direction: column;
+    }
+  }
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1.5s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+#my_animation:hover {
+    /* background-color: red; */
+    animation: slide-fwd-center;
+    animation-duration: 5s;
+    display: block; 
+}
+
+/* font awesome animations */
+  
+#container {
+  background: linear-gradient(#8affff,#80eded);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.button {
+	position: relative;
+  
+  margin-bottom: 40px;
+
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	/* background: #FE8989; */
+  /* box-shadow:  0px 0px 0 0px rgba(0,0,0,0); */
+	/* border-radius: 50px; */
+
+	/* width: 25.25rem; */
+	padding: 1rem 0;
+
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 5rem;
+	color: white;
+
+	cursor: pointer;
+
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+
+}
+	.button .icons {
+		position: relative;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		margin: 0 2.3rem 0 0;
+		width: 1.25rem;
+		height: 2.6rem;
+  }
+
+  .button .icons i {
+      box-shadow:  0px 0px 0 0px rgba(0,0,0,0);
+
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			display: block;
+		}
+		.button .icons .icon-default {
+      transition: opacity .3s, transform .3s;
+		}
+
+		.button .icons .icon-hover {
+      transition: opacity .3s, transform .3s;
+			transform: rotate(-180deg) scale(.5);
+			opacity: 0;
+		}
+
+    .button:hover {
+		  /* transform: scale(1.2); */
+    	/* box-shadow:  20px 15px rgba(0,0,0,0.15); */
+      box-shadow:  0px 0px 0 0px rgba(0,0,0,0);
+
+    }
+		.button:hover .icon-hover {
+			transform: rotate(0deg) scale(1);
+			opacity: 1;
+		}
+		.button:hover .icon-default {
+			transform: rotate(180deg) scale(.5);
+			opacity: 0;
+		}
