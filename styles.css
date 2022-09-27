@@ -69,6 +69,7 @@ a.button {
     border-width: 2px !important;
     border-radius: 12px;
     color: rgba(0,0,0,.55) !important;
+    background-color: rgba(239,239,239) !important;
     border-color: rgba(0,0,0,.55) !important;
   }
 
